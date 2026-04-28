@@ -30,7 +30,6 @@
       margin: 0 auto;
     }
 
-    /* Header with Icon */
     .header {
       display: flex;
       align-items: center;
@@ -171,10 +170,8 @@
 <body>
   <div class="container">
     
-    <!-- Updated Header with Round Icon -->
     <div class="header">
       <div class="header-icon">
-        <!-- Placeholder for your .ico file -->
         <img src="icon.ico" alt="Abdulrahman Abu">
       </div>
       <h1>My Projects</h1>
@@ -184,28 +181,24 @@
 
     <div class="projects-grid">
 
-      <!-- Project 1 -->
       <div class="project-card">
         <h3>XRPS - Rock Paper Scissors</h3>
         <p>Fancy Rock Paper Scissors game built with PHP, HTML, JavaScript and JSON.</p>
         <a href="https://xrps.gamer.gd" target="_blank" class="project-link">Play Game →</a>
       </div>
 
-      <!-- Project 2 -->
       <div class="project-card">
         <h3>Arts Portfolio</h3>
         <p>My personal art portfolio showcasing digital and traditional artwork.</p>
         <a href="https://arts.ct.ws" target="_blank" class="project-link">View Portfolio →</a>
       </div>
 
-      <!-- Project 3 -->
       <div class="project-card">
         <h3>Tic Tac Toe</h3>
         <p>Classic Tic Tac Toe game with clean design and smooth gameplay.</p>
         <a href="http://tic-tac-toe.is-great.org/" target="_blank" class="project-link">Play Tic Tac Toe →</a>
       </div>
 
-      <!-- Project 4 -->
       <div class="project-card">
         <h3>Anime Website</h3>
         <p>An anime fan site I built when I was 13 and deployed in 2026.</p>
@@ -214,7 +207,6 @@
 
     </div>
 
-    <!-- GitHub Section -->
     <div class="github-section">
       <h2>All Source Codes</h2>
       <p style="max-width: 600px; margin: 20px auto; color: #aaa;">
@@ -235,10 +227,8 @@
   </footer>
 
   <script>
-    // Dynamic Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Card Animation
     const cards = document.querySelectorAll('.project-card');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
